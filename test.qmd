@@ -7,6 +7,10 @@ library(tidyverse)
 ```
 
 ```{r}
+
+starwars %>% filter(species == "Human") %>% 
+ggplot(aes(x = height, y = mass)) +
+
 # Code team member 2
 ```
 
