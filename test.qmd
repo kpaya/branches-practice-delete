@@ -1,9 +1,15 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 ```{r}
 library(tidyverse)
 ```
 
 ```{r}
-#code team member 1
+starwars %>% filter(species=='Human') %>%
+  ggplot(aes(x=height, y=mass))+geom_point()
 ```
 
 ```{r}
